@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './screens/category_meal.dart';
 import './screens/categories.dart';
 
 void main() => runApp(MyApp());
@@ -27,7 +28,11 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               )),
-      home: Categories(),
+      // home: Categories(),
+      routes: {
+        '/': (context) => Categories(),
+        CategoryMeal.routeName: (context) => CategoryMeal(),
+      },
     );
   }
 }
@@ -44,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text("Meal App"),
       ),
-      body:null,
+      body: null,
     );
   }
 }
