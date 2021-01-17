@@ -6,9 +6,6 @@ class CategoriesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("meal"),
-      ),
       body: GridView(
         //padding from all corner 25
         padding: EdgeInsets.all(25),
